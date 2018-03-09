@@ -23,7 +23,7 @@ class student(models.Model):
 
     first_name = models.CharField(max_length=100)
     last_name = models.CharField(max_length=100)
-    date_of_lesson = models.DateField(null=True, blank=True)
+    date_of_lesson = models.DateField((null=True, blank=True))
 
 
     def get_absolute_url(self):
